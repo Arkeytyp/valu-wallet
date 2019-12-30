@@ -7,28 +7,27 @@ import {
   TouchableOpacity, 
   Platform 
 } from 'react-native';
+import Colors from '../globals/colors';
 
-const LOGO_DIR = require('../images/customIcons/verusHeaderLogo.png');
+const LOGO_DIR = require('../images/customIcons/Verus.png');
 
 const DrawerHeader = ({ navigateToScreen }) => (
 	<TouchableOpacity onPress={() => navigateToScreen('Home')}>
 		<View
 			style={{
 				flexDirection: 'row',
-				backgroundColor: "#2E86AB",
-				paddingVertical: 28,
-				paddingLeft: 17,
-				paddingTop: Platform.OS === 'ios' ? 35 : StatusBar.currentHeight,
-				alignItems: 'center',
+				backgroundColor: Colors.linkButtonColor,
+				paddingTop: '30%',
+				paddingLeft: '5%',
+				paddingBottom : '15%',
+				paddingTop: Platform.OS === 'ios' ? 35 : 30,
+				alignItems: 'flex-end',
 			}}
 		>
 			<Image
-        source={LOGO_DIR}
-        style={{width: 40, height: 40}}
+				source={LOGO_DIR}
+				style={{width: '50%', height: 100, overflow: 'hidden', resizeMode: 'contain' }}
 			/>
-			<Text style={{ color: '#FFF', paddingLeft: 9, fontSize: 16 }}>
-				Verus Wallet
-			</Text>
 		</View>
 	</TouchableOpacity>
 );

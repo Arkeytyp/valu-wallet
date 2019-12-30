@@ -193,7 +193,7 @@ export const txPreflight = (coinObj, activeUser, outputAddress, value, defaultFe
           err: true,
           result: `Spend value is too large. Max available amount is ${Number((_maxSpendBalance * 0.00000001.toFixed(8)))}.` + 
           (unshieldedFunds > 0 ? `\n\nThis is most likely due to the fact that you have ${satsToCoins(unshieldedFunds)} ${coinObj.id}
-          in unshielded funds received from mining in your wallet. Please unshield through a native client prior to sending through Verus Mobile` : null),
+          in unshielded funds received from mining in your wallet. Please unshield through a native client prior to sending through Valu Mobile` : null),
         };
 
         resolve(successObj);
@@ -288,7 +288,7 @@ export const txPreflight = (coinObj, activeUser, outputAddress, value, defaultFe
         err: true,
         result: `No spendable funds found.` + 
         (unshieldedFunds > 0 ? `\n\nThis is most likely due to the fact that you have ${satsToCoins(unshieldedFunds)} ${coinObj.id}
-        in unshielded funds received from mining in your wallet. Please unshield through a native client prior to sending through Verus Mobile` : null),
+        in unshielded funds received from mining in your wallet. Please unshield through a native client prior to sending through Valu Mobile` : null),
       });
     }
     })
