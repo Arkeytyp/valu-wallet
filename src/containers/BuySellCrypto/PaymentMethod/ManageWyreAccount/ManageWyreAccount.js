@@ -160,7 +160,7 @@ class ManageWyreAccount extends Component {
             )}
           >
             <Text style={styles.statusInfoHeader}>Verification Set Up</Text>
-            <View style={{padding: 20}}>
+            <View style={{padding: 15}}>
               <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
                 <Text style={styles.statusInfo}>
                   Account Id: &nbsp; &nbsp;

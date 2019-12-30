@@ -190,7 +190,7 @@ class BuyCrypto extends Component {
   }
 
   setToVal = (value) => {
-    const converted = calculatePrice(value, this.state.fromCurr, this.state.toCurr, this.props.rates)
+    const converted = calculatePrice(value, this.state.toCurr, this.state.fromCurr, this.props.rates)
 
     this.setState({toVal: value, fromVal: (isNumber(converted)) ? converted : this.state.fromVal})
   }
@@ -450,7 +450,6 @@ class BuyCrypto extends Component {
                   autoCapitalize='words'
                   shake={this.state.errors.toVal}
                   onChangeText={(text) => this.setToVal(text)}
-                  editable={false}
                 />
               </View>
               <View>
