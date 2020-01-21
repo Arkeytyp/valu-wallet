@@ -218,10 +218,10 @@ class ManageWyrePersonalDetails extends Component {
                options={{
                 mask: '999-99-9999'
               }}
-              value={this.state.socialSecurityNumber}
                 onChangeText={(text) => {
                   this.setState({socialSecurityNumber: text})
                 }}
+                value={this.state.socialSecurityNumber}
                 style={styles.inputMask}
               />
               <FormValidationMessage labelStyle={styles.formValidationLabel}>

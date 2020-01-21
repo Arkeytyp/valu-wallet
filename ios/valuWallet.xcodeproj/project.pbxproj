@@ -75,6 +75,7 @@
 		CE078C1123D67C1400066348 /* RNPermissionHandlerCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = CE078C0123D67C1400066348 /* RNPermissionHandlerCamera.m */; };
 		CE078C1223D67C1400066348 /* RNPermissionHandlerMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = CE078C0223D67C1400066348 /* RNPermissionHandlerMotion.m */; };
 		CE078C1423D67CAF00066348 /* RNPermissions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE078C1323D67CAF00066348 /* RNPermissions.m */; };
+		CE8D4BF823D7645100156D85 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = CE8D4BF723D7645100156D85 /* assets */; };
 		CEAF79BF23D5E11E002E95CF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEAF79BE23D5E11E002E95CF /* LaunchScreen.xib */; };
 		CEC9E29123D732580020113C /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 008F07F21AC5B25A0029DE68 /* main.jsbundle */; };
 		CEDB71C123D5B843003F396E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDB718523D5B843003F396E /* Images.xcassets */; };
@@ -648,6 +649,7 @@
 		CE078C0223D67C1400066348 /* RNPermissionHandlerMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNPermissionHandlerMotion.m; path = "../../node_modules/react-native-permissions/ios/Motion/RNPermissionHandlerMotion.m"; sourceTree = "<group>"; };
 		CE078C0323D67C1400066348 /* RNPermissionHandlerPhotoLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNPermissionHandlerPhotoLibrary.h; path = "../../node_modules/react-native-permissions/ios/PhotoLibrary/RNPermissionHandlerPhotoLibrary.h"; sourceTree = "<group>"; };
 		CE078C1323D67CAF00066348 /* RNPermissions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNPermissions.m; path = "../../node_modules/react-native-permissions/ios/RNPermissions.m"; sourceTree = "<group>"; };
+		CE8D4BF723D7645100156D85 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		CEAF79BE23D5E11E002E95CF /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		CEDB718523D5B843003F396E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = valuWallet/Images.xcassets; sourceTree = "<group>"; };
 		CEDB71C223D5B891003F396E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = valuWallet/Info.plist; sourceTree = "<group>"; };
@@ -1056,6 +1058,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				CE8D4BF723D7645100156D85 /* assets */,
 				CE078BDE23D67AED00066348 /* Permissions */,
 				13B07FAE1A68108700A75B9A /* valuWallet */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -1915,6 +1918,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8D4BF823D7645100156D85 /* assets in Resources */,
 				CEC9E29123D732580020113C /* main.jsbundle in Resources */,
 				0D3855D5B0B24F33BD5C00A3 /* AntDesign.ttf in Resources */,
 				76FE8FBEA9854FD6B69338AD /* Entypo.ttf in Resources */,
@@ -2167,7 +2171,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.5;
+				CURRENT_PROJECT_VERSION = 1.6;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = STNY8C3422;
 				ENABLE_BITCODE = YES;
@@ -2196,7 +2200,7 @@
 				INFOPLIST_FILE = valuWallet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -2215,7 +2219,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.5;
+				CURRENT_PROJECT_VERSION = 1.6;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -2243,7 +2247,7 @@
 				INFOPLIST_FILE = valuWallet/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
