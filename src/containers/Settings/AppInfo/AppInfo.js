@@ -22,7 +22,7 @@ const REDDIT_URL = "https://www.reddit.com/r/VerusCoin/"
 const TWITTER_URL = "https://twitter.com/VerusCoin"
 const PRIVACY_URL = "https://github.com/VerusCoin/Verus-Mobile/blob/master/PRIVACY.txt"
 const LICENCE_URL = "https://github.com/VerusCoin/Verus-Mobile/blob/master/LICENCE"
-const LOGO_DIR = require('../../../images/customIcons/VerusLogo.png');
+const LOGO_DIR = require('../../../images/customIcons/Valu.png');
 
 class AppInfo extends Component {
 
@@ -44,7 +44,7 @@ class AppInfo extends Component {
             style={styles.imageStyle}
             source={LOGO_DIR}
           />
-          <Text style={styles.verifiedLabel}>Verus Mobile</Text>
+          <Text style={styles.verifiedLabel}>Valu Wallet</Text>
         </View>
           <View style={styles.infoBox}>
             <View style={styles.infoRow}>

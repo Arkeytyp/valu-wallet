@@ -79,10 +79,12 @@ export default styles = StyleSheet.create({
         alignSelf: 'center',
     },
     signUpText: {
+        fontSize: 16,
         color: Colors.linkButtonColor,
         fontFamily: 'Avenir-Black',
     },
     signUpTextQuestion: {
+        fontSize: 16,
         fontFamily: 'Avenir-Black',
         color: Colors.quaternaryColor
     },

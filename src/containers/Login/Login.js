@@ -235,7 +235,7 @@ class Login extends Component {
                 />
                 <View style={styles.signUpTextContainer}>
                   <Text style={styles.signUpTextQuestion}>Don’t have an account?</Text>  
-                  <Text style={styles.signUpText} onPress={this._handleAddUser}>    Add user</Text>
+                  <Text style={styles.signUpText} onPress={this._handleAddUser}> Add user</Text>
                 </View>
               </View>
             }

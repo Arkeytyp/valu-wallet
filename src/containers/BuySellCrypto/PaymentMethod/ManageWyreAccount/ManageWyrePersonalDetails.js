@@ -19,7 +19,7 @@ import {
 import {
   putWyreAccountField
 } from '../../../../actions/actions/PaymentMethod/WyreAccount';
-import TextInputMask from 'react-native-text-input-mask';
+import { TextInputMask } from 'react-native-masked-text'
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { Calendar} from '../../../../images/customIcons/index';
 import { parseDate } from '../../../../utils/date';
@@ -174,11 +174,14 @@ class ManageWyrePersonalDetails extends Component {
               </FormLabel>
               <View style={styles.containerDateOfBirth}>
                 <TextInputMask
-                  onChangeText={(formatted) => {
-                    this.setState({dateOfBirth: formatted})
+                 type={'datetime'}
+                 options={{
+                   format: 'YYYY-MM-DD'
+                 }}
+                  onChangeText={(text) => {
+                    this.setState({dateOfBirth: text})
                   }}
                   value={this.state.dateOfBirth}
-                  mask={"[0000]-[00]-[00]"}
                   style={styles.inputMaskDateOfBirth}
                 />
                 <View style={styles.containerCalendarButton} >
@@ -211,10 +214,14 @@ class ManageWyrePersonalDetails extends Component {
                 US Social Security Number XXX-XX-XXXX:
               </FormLabel>
               <TextInputMask
-                onChangeText={(formatted) => {
-                  this.setState({socialSecurityNumber: formatted})
+               type={'custom'}
+               options={{
+                mask: '999-99-9999'
+              }}
+              value={this.state.socialSecurityNumber}
+                onChangeText={(text) => {
+                  this.setState({socialSecurityNumber: text})
                 }}
-                mask={"[000]-[00]-[0000]"}
                 style={styles.inputMask}
               />
               <FormValidationMessage labelStyle={styles.formValidationLabel}>

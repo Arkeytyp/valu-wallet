@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import Colors from '../globals/colors';
 
-const LOGO_DIR = require('../images/customIcons/Verus.png');
+const LOGO_DIR = require('../images/customIcons/Valu.png');
 
 const DrawerHeader = ({ navigateToScreen }) => (
 	<TouchableOpacity onPress={() => navigateToScreen('Home')}>

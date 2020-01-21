@@ -13,27 +13,27 @@ import Home from './home-icon-silhouette.png';
 import Buy from './buy.png';
 import Sell from './sell.png';
 import Calendar from './calendar.png';
-import Verus from './Verus.png';
+import Verus from './Valu.png';
 import BankBuildingBlack from './bankBuildingBlack.png';
 
 export {
-  Open,
-  Approved,
-  Pending,
-  Email,
-  Phone,
-  User,
-  File,
-  Bank,
-  BankBuilding,
-  BankMain,
-  Address,
-  Home,
-  Buy,
-  Sell,
-  Calendar,
-  Verus,
-  BankBuildingBlack
+    Open,
+    Approved,
+    Pending,
+    Email,
+    Phone,
+    User,
+    File,
+    Bank,
+    BankBuilding,
+    BankMain,
+    Address,
+    Home,
+    Buy,
+    Sell,
+    Calendar,
+    Verus,
+    BankBuildingBlack
 };
 
 export default Open;
