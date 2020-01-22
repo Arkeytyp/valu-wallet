@@ -89,7 +89,6 @@ class ManageWyrePersonalDetails extends Component {
       let inputError = false;
 
       const regexdateOfBirth = /^\d{4}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/;
-      const regexsocialSecurityNumber = /^([1-9])(?!\1{2}-\1{2}-\1{4})[1-9]{2}-[1-9]{2}-[1-9]{4}$/;
 
       const errors = {};
 
@@ -106,14 +105,10 @@ class ManageWyrePersonalDetails extends Component {
         inputError = true;
       }
 
-      if (!userSocialSecurityNumber) {
+      if (!userSocialSecurityNumber || userSocialSecurityNumber ==='REDACTED') {
         errors.socialSecurityNumber = 'Required field';
         inputError = true;
-      } else if (!regexsocialSecurityNumber.test(userSocialSecurityNumber)) {
-        errors.socialSecurityNumber = '"SSN" must be in the following format XXX-XX-XXXX';
-        inputError = true;
       }
-
 
       if (!inputError) {
         this.doSubmit();
@@ -217,11 +212,11 @@ class ManageWyrePersonalDetails extends Component {
                type={'custom'}
                options={{
                 mask: '999-99-9999'
-              }}
-                onChangeText={(text) => {
-                  this.setState({socialSecurityNumber: text})
                 }}
                 value={this.state.socialSecurityNumber}
+                onChangeText={(formatted) => {
+                  this.setState({socialSecurityNumber: formatted})
+                }}
                 style={styles.inputMask}
               />
               <FormValidationMessage labelStyle={styles.formValidationLabel}>

@@ -99,7 +99,6 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant_run_merged_manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/javac" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/lint_jar" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/merged_manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/metadata_feature_manifest" />
@@ -164,21 +163,22 @@
     <orderEntry type="library" name="Gradle: com.squareup.okio:okio:1.15.0@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.koushikdutta.async:androidasync:2.1.6@jar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.collection:collection:1.0.0@jar" level="project" />
-    <orderEntry type="module" module-name="react-native-fs" />
-    <orderEntry type="module" module-name="react-native-screens" />
-    <orderEntry type="module" module-name="rn-fetch-blob" />
+    <orderEntry type="module" module-name="android-react-native-fs" />
+    <orderEntry type="module" module-name="android-react-native-gesture-handler" />
+    <orderEntry type="module" module-name="android-react-native-screens" />
+    <orderEntry type="module" module-name="android-rn-fetch-blob" />
     <orderEntry type="module" module-name="react-native-share" />
-    <orderEntry type="module" module-name="react-native-os" />
-    <orderEntry type="module" module-name="react-native-text-input-mask" />
-    <orderEntry type="module" module-name="react-native-webview" />
-    <orderEntry type="module" module-name="@react-native-community_async-storage" />
-    <orderEntry type="module" module-name="@react-native-community_datetimepicker" />
+    <orderEntry type="module" module-name="android-react-native-os" />
+    <orderEntry type="module" module-name="android-react-native-webview" />
+    <orderEntry type="module" module-name="android-react-native-permissions" />
+    <orderEntry type="module" module-name="android-@react-native-community_async-storage" />
+    <orderEntry type="module" module-name="android-@react-native-community_datetimepicker" />
     <orderEntry type="module" module-name="react-native-image-picker" />
-    <orderEntry type="module" module-name="react-native-camera" />
-    <orderEntry type="module" module-name="react-native-randombytes" />
-    <orderEntry type="module" module-name="react-native-vector-icons" />
-    <orderEntry type="module" module-name="react-native-svg" />
-    <orderEntry type="module" module-name="react-native-tcp" />
-    <orderEntry type="module" module-name="react-native-udp" />
+    <orderEntry type="module" module-name="android-react-native-camera" />
+    <orderEntry type="module" module-name="android-react-native-randombytes" />
+    <orderEntry type="module" module-name="android-react-native-vector-icons" />
+    <orderEntry type="module" module-name="android-react-native-svg" />
+    <orderEntry type="module" module-name="android-react-native-tcp" />
+    <orderEntry type="module" module-name="android-react-native-udp" />
   </component>
 </module>

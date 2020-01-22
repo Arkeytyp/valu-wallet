@@ -6,7 +6,6 @@ import com.facebook.react.ReactApplication;
 import com.reactnativecommunity.rnpermissions.RNPermissionsPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.reactcommunity.rndatetimepicker.RNDateTimePickerPackage;
-import com.RNTextInputMask.RNTextInputMaskPackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.imagepicker.ImagePickerPackage;
@@ -44,7 +43,6 @@ public class MainApplication extends Application implements ReactApplication {
             new RNPermissionsPackage(),
             new RNGestureHandlerPackage(),
             new RNDateTimePickerPackage(),
-            new RNTextInputMaskPackage(),
             new RNCWebViewPackage(),
             new RNFetchBlobPackage(),
             new ImagePickerPackage(),
